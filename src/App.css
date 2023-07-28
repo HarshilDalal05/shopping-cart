@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  display: flex
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filters {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+}
+
+.filters>span {
+  padding-bottom: 20px;
+}
+
+.productContainer {
+  display: flex;
+  width: 85%;
+  padding: 20px;
+  flex-wrap: wrap;
+
+}
+
+.productCard {
+  margin: 20px;
+}
+
+.productImg {
+  height: 25vh;
+}
+
+.productName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbarBrand {
+  color: black
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cartItemImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartItemDetail {
+  margin: 0 10px;
+  width: 25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cartItemPrice {
+  margin: 0 10px
+}
+
+.goToCartBtn {
+  width: 95%;
+  margin: 0 10px;
 }
